@@ -6362,6 +6362,13 @@
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
+"cjS" = (
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/structure/rack/rogue,
+/obj/item/quiver/arrows,
+/obj/item/quiver/arrows,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter/woods)
 "cjY" = (
 /obj/structure/flora/roguegrass/herb/hypericum,
 /turf/open/floor/rogue/grassyel,
@@ -7522,11 +7529,25 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "cDU" = (
+<<<<<<< Updated upstream
 /obj/effect/landmark/start/sheriff{
 	jobspawn_override = list(Sheriff)
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+=======
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/landmark/start/bogguardsman{
+	dir = 8;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter/woods)
+>>>>>>> Stashed changes
 "cDX" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town)
@@ -8595,6 +8616,10 @@
 /obj/item/clothing/cloak/stabard/surcoat/guard,
 /obj/item/clothing/cloak/stabard/surcoat/guard,
 /obj/item/clothing/cloak/stabard/surcoat/guard,
+<<<<<<< Updated upstream
+=======
+/obj/item/clothing/cloak/stabard/surcoat/guard,
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "cWn" = (
@@ -10216,6 +10241,21 @@
 /obj/structure/fluff/statue/knight/r,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/goblinfort)
+"dzz" = (
+/obj/structure/closet/crate/roguecloset/dark{
+	keylock = 1;
+	locked = 1;
+	lockid = "warden"
+	},
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/rope/chain,
+/turf/open/floor/rogue/ruinedwood{
+	dir = 1;
+	icon_state = "vertw"
+	},
+/area/rogue/indoors/town)
 "dzF" = (
 /obj/structure/bars/passage{
 	max_integrity = 15000;
@@ -17368,11 +17408,21 @@
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/outdoors/mountains/decap)
 "fWS" = (
+<<<<<<< Updated upstream
 /obj/structure/rack/rogue,
 /obj/item/rope/chain,
 /obj/item/rope/chain,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/shelter/woods)
+=======
+/obj/item/clothing/cloak/stabard/guardhood,
+/obj/item/clothing/cloak/stabard/guardhood,
+/obj/item/clothing/cloak/stabard/guardhood,
+/obj/item/clothing/cloak/stabard/guardhood,
+/obj/structure/closet/crate/roguecloset,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement/keep)
+>>>>>>> Stashed changes
 "fWU" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/roguegrass,
@@ -18215,6 +18265,12 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/woods)
+"gob" = (
+/obj/effect/landmark/start/sheriff{
+	jobspawn_override = list(Sheriff)
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/town)
 "gol" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /obj/item/restraints/legcuffs/beartrap/armed/camouflage,
@@ -18974,9 +19030,12 @@
 /obj/item/natural/bundle/cloth{
 	amount = 8
 	},
+<<<<<<< Updated upstream
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+=======
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -19436,6 +19495,10 @@
 /area/rogue/outdoors/town)
 "gGT" = (
 /obj/structure/chair/stool/rogue,
+/obj/effect/landmark/start/watchman{
+	name = "Watchman";
+	jobspawn_override = list(Watchman)
+	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "gGV" = (
@@ -19939,6 +20002,10 @@
 "gQf" = (
 /obj/structure/closet/crate/chest,
 /obj/item/rope/chain,
+<<<<<<< Updated upstream
+=======
+/obj/item/rope/chain,
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -24776,10 +24843,20 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/shelter/mountains/decap)
 "isf" = (
+<<<<<<< Updated upstream
 /obj/machinery/light/rogue/wallfire/candle/weak/l,
 /obj/effect/landmark/start/prisonerb,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/cell)
+=======
+/obj/structure/chair/stool/rogue,
+/obj/effect/landmark/start/watchman{
+	name = "Watchman";
+	jobspawn_override = list(Watchman)
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/town)
+>>>>>>> Stashed changes
 "isg" = (
 /obj/structure/rack/rogue{
 	density = 0;
@@ -25349,6 +25426,11 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cave/dungeon1/gethsmane)
+"iCH" = (
+/obj/item/bedsheet/rogue/wool,
+/obj/structure/bed/rogue,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
 "iCI" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobblerock,
@@ -30119,6 +30201,7 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/roofs/keep)
 "kkB" = (
+<<<<<<< Updated upstream
 /obj/structure/chair/stool/rogue,
 /obj/effect/landmark/start/watchman{
 	name = "Watchman";
@@ -30126,6 +30209,15 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+=======
+/obj/effect/landmark/start/bogguardsman{
+	dir = 8;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter/woods)
+>>>>>>> Stashed changes
 "kkC" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /obj/structure/flora/roguegrass/herb/random,
@@ -30315,6 +30407,10 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/horse/male/white/tame,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town/garrison)
+"kow" = (
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter/woods)
 "koA" = (
 /obj/structure/stairs{
 	dir = 1
@@ -33031,8 +33127,14 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/toy/cards/deck,
+<<<<<<< Updated upstream
 /obj/item/book/rogue/law,
 /obj/item/book/rogue/law,
+=======
+/obj/item/book/rogue/law{
+	pixel_x = 10
+	},
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "lmd" = (
@@ -35330,6 +35432,9 @@
 	},
 /obj/item/rope/chain,
 /obj/item/kitchen/fork/iron,
+/obj/item/book/rogue/law{
+	pixel_x = 10
+	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "may" = (
@@ -37340,7 +37445,15 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/indoors/town)
 "mLc" = (
+<<<<<<< Updated upstream
 /obj/effect/landmark/start/prisonerb,
+=======
+/obj/structure/bed/rogue,
+/obj/effect/landmark/start/watchman{
+	name = "Watchman";
+	jobspawn_override = list(Watchman)
+	},
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/cell)
 "mLh" = (
@@ -37368,6 +37481,11 @@
 "mLz" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/clothing/cloak/stabard/guard,
+<<<<<<< Updated upstream
+=======
+/obj/item/clothing/cloak/stabard/guard,
+/obj/item/clothing/cloak/stabard/guard,
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "mLF" = (
@@ -37564,7 +37682,7 @@
 "mPl" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = "warden"
+	lockid = "watch"
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town)
@@ -40906,6 +41024,10 @@
 	},
 /obj/structure/fluff/railing/border{
 	dir = 6
+	},
+/obj/effect/landmark/start/watchman{
+	name = "Watchman";
+	jobspawn_override = list(Watchman)
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
@@ -49870,6 +49992,10 @@
 /obj/structure/fluff/railing/border{
 	dir = 10
 	},
+/obj/effect/landmark/start/watchman{
+	name = "Watchman";
+	jobspawn_override = list(Watchman)
+	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "qVA" = (
@@ -52320,6 +52446,11 @@
 /obj/structure/closet/crate/roguecloset,
 /obj/item/clothing/cloak/tabard/knight/guard,
 /obj/item/clothing/cloak/tabard/knight/guard,
+<<<<<<< Updated upstream
+=======
+/obj/item/clothing/cloak/tabard/knight/guard,
+/obj/item/clothing/cloak/tabard/knight/guard,
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "rNX" = (
@@ -54464,7 +54595,10 @@
 "svz" = (
 /obj/structure/rack/rogue,
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+<<<<<<< Updated upstream
 /obj/item/quiver/arrows,
+=======
+>>>>>>> Stashed changes
 /obj/effect/decal/cobbleedge{
 	dir = 1;
 	icon_state = "borderfall"
@@ -54472,6 +54606,7 @@
 /obj/machinery/light/rogue/torchholder/r{
 	dir = 4
 	},
+/obj/item/quiver/arrows,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "svD" = (
@@ -56598,6 +56733,14 @@
 	icon_state = "weird1"
 	},
 /area/rogue/indoors/town)
+"tjS" = (
+/obj/effect/landmark/start/bogguardsman{
+	dir = 8;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
 "tjV" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
@@ -57464,6 +57607,9 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/candle/yellow/lit,
+/obj/item/book/rogue/law{
+	pixel_x = 10
+	},
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -62510,9 +62656,15 @@
 	locked = 1;
 	lockid = "warden"
 	},
+<<<<<<< Updated upstream
 /obj/item/clothing/head/roguetown/helmet/kettle,
 /obj/item/rope/chain,
 /obj/item/flashlight/flare/torch/lantern,
+=======
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+>>>>>>> Stashed changes
 /turf/open/floor/rogue/ruinedwood{
 	dir = 1;
 	icon_state = "vertw"
@@ -64128,6 +64280,12 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/roofs/keep)
+"vJh" = (
+/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
+/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter/woods)
 "vJj" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -64423,6 +64581,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "vOc" = (
+<<<<<<< Updated upstream
 /obj/effect/landmark/start/bogguardsman{
 	dir = 8;
 	jobspawn_override = list("Bog Master","Bog Guard","Warden");
@@ -64430,6 +64589,15 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/shelter/woods)
+=======
+/obj/structure/closet/crate/roguecloset,
+/obj/item/clothing/cloak/cape/guard,
+/obj/item/clothing/cloak/cape/guard,
+/obj/item/clothing/cloak/cape/guard,
+/obj/item/clothing/cloak/cape/guard,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement/keep)
+>>>>>>> Stashed changes
 "vOf" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -278085,11 +278253,19 @@ eFC
 rPF
 dot
 aVg
+<<<<<<< Updated upstream
 mLc
 rPF
 dot
 aVg
 isf
+=======
+aaB
+rPF
+dot
+aVg
+dKM
+>>>>>>> Stashed changes
 wFN
 uqB
 uqB
@@ -361695,7 +361871,11 @@ iGe
 bYB
 jew
 iBM
+<<<<<<< Updated upstream
 cDU
+=======
+gob
+>>>>>>> Stashed changes
 jew
 nwt
 jdu
@@ -362140,8 +362320,13 @@ eKH
 tDz
 sYZ
 phl
+<<<<<<< Updated upstream
 kkB
 kkB
+=======
+isf
+isf
+>>>>>>> Stashed changes
 xXC
 lIw
 phl
@@ -475707,7 +475892,11 @@ wEZ
 sSH
 pXv
 pXv
+<<<<<<< Updated upstream
 hrP
+=======
+cjS
+>>>>>>> Stashed changes
 jgM
 aBB
 aBB
@@ -476158,7 +476347,7 @@ jcr
 kbo
 hhH
 tlX
-tlX
+tjS
 pXv
 gGD
 aBB
@@ -476606,12 +476795,20 @@ aBB
 aBB
 aBB
 bPl
+<<<<<<< Updated upstream
 nWg
+=======
+iCH
+>>>>>>> Stashed changes
 kbo
-hhH
+cDU
 tlX
 nKa
+<<<<<<< Updated upstream
 vOc
+=======
+kkB
+>>>>>>> Stashed changes
 jgM
 aBB
 aBB
@@ -477063,7 +477260,11 @@ kbo
 hhH
 tlX
 tlX
+<<<<<<< Updated upstream
 fWS
+=======
+vJh
+>>>>>>> Stashed changes
 jgM
 aBB
 aBB
@@ -477851,7 +478052,7 @@ phl
 btQ
 dxc
 btQ
-vhp
+dzz
 imI
 gEo
 jew
@@ -477964,7 +478165,7 @@ aBB
 lKH
 wRC
 kbo
-hhH
+cDU
 tlX
 tlX
 vOc
@@ -478419,7 +478620,11 @@ kbo
 sNi
 fUD
 pXv
+<<<<<<< Updated upstream
 mzV
+=======
+kow
+>>>>>>> Stashed changes
 jgM
 aBB
 aBB
