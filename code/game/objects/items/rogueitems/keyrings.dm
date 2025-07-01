@@ -305,4 +305,4 @@
 	keys = list(/obj/item/roguekey/farm, /obj/item/roguekey/apartments/stable1, /obj/item/roguekey/apartments/stable2)
 
 /obj/item/storage/keyring/watch
-	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/dungeon, /obj/item/roguekey/armory)
+	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/dungeon, /obj/item/roguekey/armory, /obj/item/roguekey/warden)
