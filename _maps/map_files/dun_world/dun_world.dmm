@@ -969,18 +969,6 @@
 /obj/item/cooking/pan,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
-"apE" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
-/obj/effect/landmark/start/bogguardsman{
-	dir = 8;
-	jobspawn_override = list("Bog Master","Bog Guard","Warden");
-	name = "Warden"
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter/woods)
 "apF" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/ruinedwood{
@@ -3848,14 +3836,6 @@
 /obj/item/clothing/wrists/roguetown/bracers/leather/heavy,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/town/basement/keep)
-"bpH" = (
-/obj/effect/landmark/start/bogguardsman{
-	dir = 8;
-	jobspawn_override = list("Bog Master","Bog Guard","Warden");
-	name = "Warden"
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/indoors/shelter/woods)
 "bpJ" = (
 /obj/structure/stairs{
 	dir = 4
@@ -4130,8 +4110,12 @@
 /area/rogue/indoors/town)
 "btQ" = (
 /obj/structure/bed/rogue,
+/obj/effect/landmark/start/bogguardsman{
+	dir = 8;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
 /obj/item/bedsheet/rogue/wool,
-/obj/effect/landmark/start/guardsman,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "buc" = (
@@ -5905,8 +5889,7 @@
 "bYB" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
-	lockid = "watch";
-	name = "watchtower"
+	lockid = "walls"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
@@ -7540,8 +7523,12 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "cDU" = (
+/obj/effect/landmark/start/bogguardsman{
+	dir = 8;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
 /obj/structure/chair/stool/rogue,
-/obj/effect/landmark/start/guardsman,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "cDX" = (
@@ -8609,6 +8596,8 @@
 /area/rogue/outdoors/mountains/decap/gunduzirak)
 "cWk" = (
 /obj/structure/closet/crate/roguecloset,
+/obj/item/clothing/cloak/stabard/surcoat/guard,
+/obj/item/clothing/cloak/stabard/surcoat/guard,
 /obj/item/clothing/cloak/stabard/surcoat/guard,
 /obj/item/clothing/cloak/stabard/surcoat/guard,
 /obj/item/clothing/cloak/stabard/surcoat/guard,
@@ -12642,14 +12631,6 @@
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors/town)
-"esX" = (
-/obj/effect/landmark/start/bogguardsman{
-	dir = 8;
-	jobspawn_override = list("Bog Master","Bog Guard","Warden");
-	name = "Warden"
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter/woods)
 "eta" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/twig,
@@ -12879,10 +12860,14 @@
 /obj/structure/bed/rogue{
 	dir = 8
 	},
+/obj/effect/landmark/start/bogguardsman{
+	dir = 8;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
 /obj/item/bedsheet/rogue/wool{
 	dir = 8
 	},
-/obj/effect/landmark/start/guardsman,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "ewD" = (
@@ -17389,6 +17374,8 @@
 /obj/item/clothing/cloak/stabard/guardhood,
 /obj/item/clothing/cloak/stabard/guardhood,
 /obj/item/clothing/cloak/stabard/guardhood,
+/obj/item/clothing/cloak/stabard/guardhood,
+/obj/item/clothing/cloak/stabard/guardhood,
 /obj/structure/closet/crate/roguecloset,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
@@ -18991,9 +18978,6 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/candle/yellow,
-/obj/item/natural/bundle/cloth{
-	amount = 8
-	},
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -19957,6 +19941,7 @@
 /obj/structure/closet/crate/chest,
 /obj/item/rope/chain,
 /obj/item/rope/chain,
+/obj/item/clothing/cloak/stabard/guardhood,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -22242,8 +22227,15 @@
 /area/rogue/indoors/shelter/mountains/decap)
 "hAo" = (
 /obj/structure/rack/rogue,
-/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
-/obj/item/quiver/bolts,
+/obj/item/rogueweapon/sword/short,
+/obj/item/rogueweapon/sword/short,
+/obj/item/rogueweapon/sword/short,
+/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
+/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
+/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
+/obj/item/rogueweapon/huntingknife/idagger/steel,
+/obj/item/rogueweapon/huntingknife/idagger/steel,
+/obj/item/rogueweapon/huntingknife/idagger/steel,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "hAy" = (
@@ -24387,9 +24379,6 @@
 	icon_state = "borderfall"
 	},
 /obj/machinery/light/rogue/torchholder/r,
-/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
-/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
-/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "imT" = (
@@ -24787,9 +24776,14 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/shelter/mountains/decap)
 "isf" = (
-/obj/structure/rack/rogue,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter/woods)
+/obj/structure/chair/stool/rogue,
+/obj/effect/landmark/start/bogguardsman{
+	dir = 4;
+	jobspawn_override = list("Bog Master","Bog Guard","Warden");
+	name = "Warden"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/town)
 "isg" = (
 /obj/structure/rack/rogue{
 	density = 0;
@@ -28539,10 +28533,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/under/cavewet/bogcaves/sunkencity)
-"jIl" = (
-/obj/effect/landmark/start/guardsman,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/town)
 "jIB" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -30129,19 +30119,8 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/roofs/keep)
 "kkB" = (
-/obj/structure/closet/crate/roguecloset/dark{
-	keylock = 1;
-	locked = 1;
-	lockid = "warden"
-	},
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/rope/chain,
-/turf/open/floor/rogue/ruinedwood{
-	dir = 1;
-	icon_state = "vertw"
-	},
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "kkC" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
@@ -33048,9 +33027,6 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/toy/cards/deck,
-/obj/item/book/rogue/law{
-	pixel_x = 10
-	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "lmd" = (
@@ -35348,9 +35324,6 @@
 	},
 /obj/item/rope/chain,
 /obj/item/kitchen/fork/iron,
-/obj/item/book/rogue/law{
-	pixel_x = 10
-	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "may" = (
@@ -37356,6 +37329,7 @@
 /area/rogue/indoors/town)
 "mLc" = (
 /obj/structure/bed/rogue,
+/obj/effect/landmark/start/watchman,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "mLh" = (
@@ -37382,6 +37356,9 @@
 /area/rogue/under/cave/orcdungeon)
 "mLz" = (
 /obj/structure/closet/crate/roguecloset,
+/obj/item/clothing/cloak/stabard/guard,
+/obj/item/clothing/cloak/stabard/guard,
+/obj/item/clothing/cloak/stabard/guard,
 /obj/item/clothing/cloak/stabard/guard,
 /obj/item/clothing/cloak/stabard/guard,
 /obj/item/clothing/cloak/stabard/guard,
@@ -37412,8 +37389,8 @@
 "mLN" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
-	lockid = "watch";
-	name = "watchtower"
+	lockid = "warden";
+	name = "warden's watchtower"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
@@ -37581,7 +37558,7 @@
 "mPl" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = "watch"
+	lockid = "warden"
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town)
@@ -39545,8 +39522,8 @@
 "nwt" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
-	lockid = "watch";
-	name = "watchtower"
+	lockid = "warden";
+	name = "warden's watchtower"
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
@@ -39601,11 +39578,6 @@
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/mountains)
-"nxP" = (
-/obj/item/bedsheet/rogue/wool,
-/obj/structure/bed/rogue,
-/turf/open/floor/rogue/twig,
-/area/rogue/indoors/shelter/woods)
 "nxV" = (
 /obj/structure/closet/crate/chest,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
@@ -39702,8 +39674,8 @@
 "nAp" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
-	lockid = "watch";
-	name = "watchtower"
+	lockid = "warden";
+	name = "warden's watchtower"
 	},
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
@@ -40536,10 +40508,6 @@
 	},
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town)
-"nOt" = (
-/obj/effect/landmark/start/sheriff,
-/turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "nOC" = (
 /obj/structure/mineral_door/wood/fancywood{
@@ -43061,7 +43029,7 @@
 /obj/structure/mineral_door/swing_door{
 	keylock = 1;
 	locked = 1;
-	lockid = "watch";
+	lockid = "warden";
 	name = "stables"
 	},
 /turf/open/floor/rogue/dirt/road,
@@ -47983,6 +47951,7 @@
 /obj/structure/rack/rogue,
 /obj/machinery/light/rogue/torchholder/c,
 /obj/item/clothing/head/roguetown/helmet/bascinet,
+/obj/item/clothing/head/roguetown/helmet/bascinet,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "qnY" = (
@@ -52335,6 +52304,8 @@
 /obj/item/clothing/cloak/tabard/knight/guard,
 /obj/item/clothing/cloak/tabard/knight/guard,
 /obj/item/clothing/cloak/tabard/knight/guard,
+/obj/item/clothing/cloak/tabard/knight/guard,
+/obj/item/clothing/cloak/tabard/knight/guard,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "rNX" = (
@@ -54479,6 +54450,18 @@
 "svz" = (
 /obj/structure/rack/rogue,
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/item/quiver/arrows,
+/obj/item/quiver/arrows,
+/obj/item/quiver/arrows,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
+/obj/item/quiver/arrows,
+/obj/item/quiver/arrows,
+/obj/item/quiver/arrows,
+/obj/item/quiver/arrows,
 /obj/effect/decal/cobbleedge{
 	dir = 1;
 	icon_state = "borderfall"
@@ -54486,7 +54469,6 @@
 /obj/machinery/light/rogue/torchholder/r{
 	dir = 4
 	},
-/obj/item/quiver/arrows,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "svD" = (
@@ -54900,14 +54882,16 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains/decap)
 "sEv" = (
+/obj/item/roguekey/warden,
+/obj/item/roguekey/warden,
+/obj/item/roguekey/warden,
 /obj/structure/fluff/wallclock,
-/obj/structure/bed/rogue{
-	dir = 8
+/obj/structure/closet/crate/roguecloset/dark{
+	keylock = 1;
+	locked = 1;
+	lockid = "warden"
 	},
-/obj/item/bedsheet/rogue/wool{
-	dir = 8
-	},
-/obj/effect/landmark/start/guardsman,
+/obj/item/roguekey/warden,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "sEC" = (
@@ -57476,9 +57460,6 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/candle/yellow/lit,
-/obj/item/book/rogue/law{
-	pixel_x = 10
-	},
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -59046,13 +59027,6 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/mountains)
-"tXO" = (
-/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
-/obj/structure/rack/rogue,
-/obj/item/quiver/arrows,
-/obj/item/quiver/arrows,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter/woods)
 "tXX" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/under/cavewet/bogcaves/sunkencity)
@@ -62541,9 +62515,15 @@
 	locked = 1;
 	lockid = "warden"
 	},
+/obj/item/clothing/cloak/raincloak/furcloak/woad,
+/obj/item/clothing/cloak/raincloak/furcloak/woad,
+/obj/item/clothing/mask/rogue/wildguard,
+/obj/item/clothing/mask/rogue/wildguard,
+/obj/item/flashlight/flare/torch/lantern,
 /obj/item/rope/chain,
 /obj/item/rope/chain,
-/obj/item/rope/chain,
+/obj/item/clothing/head/roguetown/helmet/kettle,
+/obj/item/clothing/head/roguetown/helmet/kettle,
 /turf/open/floor/rogue/ruinedwood{
 	dir = 1;
 	icon_state = "vertw"
@@ -64462,6 +64442,8 @@
 /obj/item/clothing/cloak/cape/guard,
 /obj/item/clothing/cloak/cape/guard,
 /obj/item/clothing/cloak/cape/guard,
+/obj/item/clothing/cloak/cape/guard,
+/obj/item/clothing/cloak/cape/guard,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "vOf" = (
@@ -65692,12 +65674,6 @@
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/beach)
-"whQ" = (
-/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
-/obj/item/rogueweapon/stoneaxe/woodcut/wardenpick,
-/obj/structure/rack/rogue,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter/woods)
 "whR" = (
 /obj/structure/fluff/alch,
 /turf/open/floor/rogue/hexstone,
@@ -361279,8 +361255,8 @@ eKH
 fzK
 sYZ
 phl
-cDU
-cDU
+isf
+isf
 bTe
 phl
 phl
@@ -361738,7 +361714,7 @@ iGe
 bYB
 jew
 iBM
-nOt
+iBM
 jew
 nwt
 jdu
@@ -362184,7 +362160,7 @@ tDz
 sYZ
 phl
 cDU
-cDU
+kkB
 xXC
 lIw
 phl
@@ -475750,7 +475726,7 @@ wEZ
 sSH
 pXv
 pXv
-tXO
+pXv
 jgM
 aBB
 aBB
@@ -476201,7 +476177,7 @@ jcr
 kbo
 hhH
 tlX
-bpH
+tlX
 pXv
 gGD
 aBB
@@ -476649,12 +476625,12 @@ aBB
 aBB
 aBB
 bPl
-nxP
+tlX
 kbo
-apE
+hhH
 tlX
 nKa
-esX
+pXv
 jgM
 aBB
 aBB
@@ -476993,7 +476969,7 @@ apZ
 apZ
 oea
 jew
-jIl
+jew
 jew
 jew
 gGT
@@ -477106,7 +477082,7 @@ kbo
 hhH
 tlX
 tlX
-whQ
+pXv
 jgM
 aBB
 aBB
@@ -477894,7 +477870,7 @@ phl
 btQ
 vhp
 btQ
-kkB
+vhp
 imI
 gEo
 jew
@@ -478007,7 +477983,7 @@ aBB
 lKH
 wRC
 kbo
-apE
+hhH
 tlX
 tlX
 pXv
@@ -478462,7 +478438,7 @@ kbo
 sNi
 fUD
 pXv
-isf
+pXv
 jgM
 aBB
 aBB
