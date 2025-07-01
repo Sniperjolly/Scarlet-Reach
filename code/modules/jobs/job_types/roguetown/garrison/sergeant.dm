@@ -49,17 +49,17 @@
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	cloak = /obj/item/clothing/cloak/
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	shoes = /obj/item/clothing/shoes/roguetown/boots
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather/black
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	gloves = /obj/item/clothing/gloves/roguetown/leather
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
 	id = /obj/item/scomstone/garrison
 
-//Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
+//The absolute HOG of the watch
 /datum/advclass/sergeant/sergeant
 	name = "Sheriff"
 	tutorial = "You are not just anybody but the Sheriff of the Baron's town. While you may have started as some peasant or mercenary, you have advanced through the ranks to that of someone who commands respect and wields it."
@@ -83,12 +83,12 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 5, TRUE)	// We are basically identical to a regular MAA, except having better athletics to help us manage our order usage better
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 5, TRUE)	
 	H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)	//Decent tracking akin to Skirmisher.
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)	//This unit can sniff crime out from two blocks away
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC) //+1 spd, con, end, +3 per in town
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC) //Our fearless commander of the WATCH
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 1)
 	H.change_stat("constitution", 1)
@@ -103,12 +103,10 @@
 	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw, /mob/proc/haltyell, /mob/living/carbon/human/mind/proc/setorders)
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/sheriff = 1, /obj/item/rogueweapon/mace/cudgel/justice = 1)
 	H.adjust_blindness(-3)
-	var/weapons = list("Rhomphaia","Flail & Shield","Sabre & Crossbow")	//Bit more unique than footsman, you are a jack-of-all-trades + slightly more 'elite'.
+	var/weapons = list("Flail & Shield","Sabre & Crossbow")	
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
-		if("Rhomphaia")			//Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
-			backl = /obj/item/rogueweapon/sword/long/rhomphaia
 		if("Flail & Shield")	//The ultimate in knee-smashing technology and a sturdy shield
 			beltr = /obj/item/rogueweapon/flail/sflail
 			backl = /obj/item/rogueweapon/shield/tower
@@ -143,7 +141,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == "Watchman")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
@@ -205,7 +203,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == "Watchman")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
@@ -236,7 +234,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == "Watchman")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
@@ -294,7 +292,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Man at Arms")
+			if(!target.job == "Watchman")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")

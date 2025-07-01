@@ -4,11 +4,11 @@
 	flag = GUARDSMAN
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 7
+	spawn_positions = 7
 	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP // same as town guard
+	allowed_races = RACES_SHUNNED_UP // Rejects RISE
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "Responsible for the safety of the town and the enforcement of the Baron's law, you are the vanguard of the city faced with punishing those who defy his Majesty. Though you've many lords to obey, as both the Church and the Bailiff have great sway over your life."
 	display_order = JDO_TOWNGUARD
@@ -55,7 +55,7 @@
 /*Design philosophy: Men and women from various areas of life, from hunters to street-brawlers and more 'veteran' levy-men. Know less skills overall than Bog, but far more specialized.
 Footsman is basically a regular foots-soldier with gear to combat criminals, specializes in maces, polearms, and decent flail/sword training.
 Archer is basically a 'bounty-catcher' in function, less specialized at close-quarters, beyond knives, but very capable of downing a fleeing criminal.*/
-/datum/advclass/watchman/footsman //Basically, this guy is a facking 
+/datum/advclass/watchman/footsman //Basically, this guy is a fucking beefcake
 	name = "Watch Footsman"
 	tutorial = "You are a footsman of the Town Watch. Well versed in various close-quarters weapons and aprehending street-savy criminals."
 	outfit = /datum/outfit/job/roguetown/guardsman/footsman
@@ -74,7 +74,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
@@ -91,7 +91,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	head = /obj/item/clothing/head/roguetown/helmet
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 	beltr = /obj/item/rogueweapon/mace/cudgel
-	backr = /obj/item/rogueweapon/shield/wood		//Maybe give a buckler? Gave wood because 40 coverage is better than 10 but dunno.
+	backr = /obj/item/rogueweapon/shield/wood
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	beltl = /obj/item/storage/keyring/watch
 	belt = /obj/item/storage/belt/rogue/leather/black
@@ -118,14 +118,15 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)		//Maybe take away? Leaving for now just as a fall-back for non-lethal ability.
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE) // for armor repairs as they're a light chud
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)	//For basic crafting; you'll need it due to relegated support role.
 	H.mind.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)	//Likely hunter background; very crappy basic skill.
-	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE) 
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)  //better tracking as they are the lighter, woodsman esq class
 	H.change_stat("perception", 2)
 	H.change_stat("endurance", 1)
 	H.change_stat("speed", 2)
