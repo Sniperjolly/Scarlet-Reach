@@ -26833,6 +26833,7 @@
 "jci" = (
 /obj/item/bedsheet/rogue/wool,
 /obj/structure/bed/rogue,
+/obj/effect/landmark/start/bogguardsman,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "jco" = (
@@ -40938,6 +40939,7 @@
 "nWg" = (
 /obj/structure/bed/rogue,
 /obj/item/bedsheet/rogue/wool,
+/obj/effect/landmark/start/bogguardsman,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "nWh" = (
