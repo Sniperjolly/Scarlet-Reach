@@ -18186,7 +18186,7 @@
 /obj/structure/closet/crate/roguecloset/dark{
 	keylock = 1;
 	locked = 1;
-	lockid = "warden"
+	lockid = "watch"
 	},
 /obj/item/rope/chain,
 /obj/item/rope/chain,
@@ -39571,8 +39571,8 @@
 "nwt" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
-	lockid = "warden";
-	name = "warden's watchtower"
+	lockid = "watch";
+	name = "watchtower"
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
@@ -62600,7 +62600,7 @@
 /obj/structure/closet/crate/roguecloset/dark{
 	keylock = 1;
 	locked = 1;
-	lockid = "warden"
+	lockid = "watch"
 	},
 /obj/item/flashlight/flare/torch/lantern,
 /obj/item/flashlight/flare/torch/lantern,
@@ -70226,7 +70226,7 @@
 /obj/structure/closet/crate/roguecloset/dark{
 	keylock = 1;
 	locked = 1;
-	lockid = "warden"
+	lockid = "watch"
 	},
 /obj/item/rope/chain,
 /obj/item/rope/chain,
