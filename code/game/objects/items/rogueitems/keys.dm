@@ -219,7 +219,7 @@
 	name = "bailiff's key"
 	desc = "This key belongs to the bailiff."
 	icon_state = "cheesekey"
-	lockid = "sheriff"
+	lockid = "bailiff"
 
 /obj/item/roguekey/armory
 	name = "armory key"
