@@ -35,14 +35,14 @@
 			H.advsetup = 1
 			H.invisibility = INVISIBILITY_MAXIMUM
 			H.become_blind("advsetup")
-			if(istype(H.cloak, /obj/item/clothing/cloak/cape))
+			if(istype(H.cloak, /obj/item/clothing/cloak/stabard/surcoat/guard))
 				var/obj/item/clothing/S = H.cloak
 				var/index = findtext(H.real_name, " ")
 				if(index)
 					index = copytext(H.real_name, 1,index)
 				if(!index)
 					index = H.real_name
-				S.name = "sergeant cape ([index])"
+				S.name = "sergeant jupon ([index])"
 
 //All skills/traits are on the loadouts. All are identical. Welcome to the stupid way we have to make sub-classes...
 /datum/outfit/job/roguetown/sergeant
@@ -59,7 +59,6 @@
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
 	id = /obj/item/scomstone/garrison
 
-//The absolute HOG of the watch
 /datum/advclass/sergeant/sergeant
 	name = "Sergeant"
 	tutorial = "You are not just anybody but the top guy of the Manor. While you may have started as some peasant or mercenary, you have advanced through the ranks to that of someone who commands respect and wields it."
@@ -74,7 +73,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
@@ -88,7 +87,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)	//This unit can sniff crime out from two blocks away
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC) //+1 spd, con, end, +3 per in town
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC) //Our fearless commander of the WATCH
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 1)
 	H.change_stat("constitution", 1)
@@ -141,7 +140,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Watchman")
+			if(!target.job == "Manor Guard")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
@@ -203,7 +202,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Watchman")
+			if(!target.job == "Manor Guard")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
@@ -234,7 +233,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Watchman")
+			if(!target.job == "Manor Guard")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
@@ -292,7 +291,7 @@
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
 		if(user.job == "Sergeant")
-			if(!target.job == "Watchman")
+			if(!target.job == "Manor Guard")
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				return
 		if(user.job == "Knight Captain")
