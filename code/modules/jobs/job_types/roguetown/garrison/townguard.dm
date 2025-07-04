@@ -91,7 +91,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	head = /obj/item/clothing/head/roguetown/helmet
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 	beltr = /obj/item/rogueweapon/mace/cudgel
-	backr = /obj/item/rogueweapon/shield/wood
+	backl = /obj/item/rogueweapon/shield/wood
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	beltl = /obj/item/storage/keyring/watch
 	belt = /obj/item/storage/belt/rogue/leather/black
