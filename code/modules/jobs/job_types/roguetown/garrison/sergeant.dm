@@ -1,15 +1,15 @@
 /datum/job/roguetown/sergeant
-	title = "Sheriff"
+	title = "Sergeant"
 	flag = SERGEANT
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP//Identical to MAA.
 	allowed_patrons = NON_PSYDON_PATRONS
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "You are the most experienced of the town's watch, leading them in maintaining order and attending to threats and crimes below the court's attention. \
+	tutorial = "You are the most experienced of the Manor Guard, leading them in maintaining order and attending to threats and crimes below the court's attention. \
 				You answer alone to the Marshal and the Crown."
 	display_order = JDO_SERGEANT
 	whitelist_req = TRUE
@@ -42,7 +42,7 @@
 					index = copytext(H.real_name, 1,index)
 				if(!index)
 					index = H.real_name
-				S.name = "sheriff cape ([index])"
+				S.name = "sergeant cape ([index])"
 
 //All skills/traits are on the loadouts. All are identical. Welcome to the stupid way we have to make sub-classes...
 /datum/outfit/job/roguetown/sergeant
@@ -61,8 +61,8 @@
 
 //The absolute HOG of the watch
 /datum/advclass/sergeant/sergeant
-	name = "Sheriff"
-	tutorial = "You are not just anybody but the Sheriff of the Baron's town. While you may have started as some peasant or mercenary, you have advanced through the ranks to that of someone who commands respect and wields it."
+	name = "Sergeant"
+	tutorial = "You are not just anybody but the top guy of the Manor. While you may have started as some peasant or mercenary, you have advanced through the ranks to that of someone who commands respect and wields it."
 	outfit = /datum/outfit/job/roguetown/sergeant/sergeant
 
 	category_tags = list(CTAG_SERGEANT)
@@ -101,7 +101,7 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/order/focustarget)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/convertrole/guard) // We'll just use Watchmen as sorta conscripts yeag?
 	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw, /mob/proc/haltyell, /mob/living/carbon/human/mind/proc/setorders)
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/sheriff = 1, /obj/item/rogueweapon/mace/cudgel/justice = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/sheriff = 1)
 	H.adjust_blindness(-3)
 	var/weapons = list("Flail & Shield","Sabre & Crossbow")	
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
